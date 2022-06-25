@@ -1,0 +1,23 @@
+{
+  "name": "w18-friendlynetworkapi-du",
+  "version": "1.0.0",
+  "description": "social network API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Floki-themad/W18-friendlyNetworkApi-DU.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Floki-themad/W18-friendlyNetworkApi-DU/issues"
+  },
+  "homepage": "https://github.com/Floki-themad/W18-friendlyNetworkApi-DU#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0"
+  }
+}
