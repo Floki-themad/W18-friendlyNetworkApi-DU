@@ -1,5 +1,4 @@
 const { Schema, Type, model} = require('mongoose');
-const { stringify } = require('querystring');
 
 const userSchema = new Schema(
     {
@@ -10,13 +9,13 @@ const userSchema = new Schema(
             trimmed: true,
         },
         email: {
-            type: string,
+            type: String,
             required: true,
             unique: true,
             match: [/^([a-zA-Z0-9_\.-]+)@([/da-zA-Z\.-]+)\.([a-zA-Z\.]{2,6})$/],
-        },
-        thoughts: [{type: Schema.Types.ObjectId, ref: 'thought'}],
-        friends: [{type: Schema.Types.ObjectId, ref: 'users'}],
+          },
+          thoughts: [{ type: Schema.Types.ObjectId, ref: 'thought' }],
+          friends: [{ type: Schema.Types.ObjectId, ref: 'users' }],
     },
     {
         toJSON: {
